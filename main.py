@@ -8,11 +8,11 @@ COMPANY_NAME = "Tesla Inc"
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-my_email = "shu.py.thore@gmail.com"
-password = "qetuadgj0"
-recipient = "shubhamrathore3261@gmail.com"
-STOCK_API_KEY = "WQOXN8L45ZDGJQI6"
-NEWS_API_KEY = "a46e10cc58964adf98514494c6a88ded"
+my_email = "~"
+password = "~"
+recipient = "~"
+STOCK_API_KEY = "~"
+NEWS_API_KEY = "~"
 
 stock_param = {
     "function": "TIME_SERIES_DAILY",
