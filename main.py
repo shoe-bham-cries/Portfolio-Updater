@@ -3,8 +3,8 @@ import smtplib
 import html
 
 
-STOCK_NAME = "TSLA"
-COMPANY_NAME = "Tesla Inc"
+STOCK_NAME = "TSLA" # Replace with interested stock ticker/unique identifier
+COMPANY_NAME = "Tesla Inc" # Replace with interested company name
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
