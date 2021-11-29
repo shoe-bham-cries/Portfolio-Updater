@@ -5,7 +5,7 @@ import html
 
 STOCK_NAME = "TSLA" # Replace with interested stock ticker/unique identifier
 COMPANY_NAME = "Tesla Inc" # Replace with interested company name
-
+SIGNIFICANT_CHANGE = 2
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 my_email = "~"
@@ -32,7 +32,7 @@ day_before_yesterday_closing_price = day_before_yesterday_data["4. close"]
 diff_percent = (abs(float(day_before_yesterday_closing_price) - float(yesterday_closing_price))/float(yesterday_closing_price))*100
 
 
-if diff_percent > 2:
+if diff_percent > SIGNIFICANT_CHANGE:
     news_params = {
         "apiKey": NEWS_API_KEY,
         "qInTitle": COMPANY_NAME,
